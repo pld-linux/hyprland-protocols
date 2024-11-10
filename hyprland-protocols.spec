@@ -1,12 +1,12 @@
 Summary:	Wayland protocol extensions for Hyprland
 Name:		hyprland-protocols
-Version:	0.3.0
+Version:	0.4.0
 Release:	1
 License:	BSD
 Group:		Development/Tools
 #Source0Download: https://github.com/hyprwm/hyprland-protocols/releases
 Source0:	https://github.com/hyprwm/hyprland-protocols/archive/v%{version}/%{name}-v%{version}.tar.gz
-# Source0-md5:	91362596d4facfa0d4ca9506931da28c
+# Source0-md5:	38e4122fa423e5ef780be9d8c8d4c27c
 URL:		https://hyprland.org/
 BuildRequires:	meson >= 0.60.3
 BuildRequires:	ninja
