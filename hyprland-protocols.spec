@@ -10,7 +10,7 @@ Source0:	https://github.com/hyprwm/hyprland-protocols/archive/v%{version}/%{name
 URL:		https://hyprland.org/
 BuildRequires:	meson >= 0.60.3
 BuildRequires:	ninja
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -21,14 +21,14 @@ Wayland protocol extensions for Hyprland.
 %setup -q
 
 %build
-%meson build
+%meson
 
-%ninja_build -C build
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%ninja_install -C build
+%meson_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
